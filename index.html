@@ -5,10 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LinkedIn Post Preview</title>
 <meta name="description" content="Mock up how a LinkedIn post will look in the feed on desktop and mobile, including the '...more' fold, media, reshares and engagement.">
-<!-- html-to-image 1.11.11 (MIT, github.com/bubkoo/html-to-image), inlined so the page works offline -->
-<script>!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"function"==typeof define&&define.amd?define(["exports"],e):e((t="undefined"!=typeof globalThis?globalThis:t||self).htmlToImage={})}(this,(function(t){"use strict";function e(t,e,n,r){return new(n||(n=Promise))((function(i,o){function u(t){try{a(r.next(t))}catch(t){o(t)}}function c(t){try{a(r.throw(t))}catch(t){o(t)}}function a(t){var e;t.done?i(t.value):(e=t.value,e instanceof n?e:new n((function(t){t(e)}))).then(u,c)}a((r=r.apply(t,e||[])).next())}))}function n(t,e){var n,r,i,o,u={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return o={next:c(0),throw:c(1),return:c(2)},"function"==typeof Symbol&&(o[Symbol.iterator]=function(){return this}),o;function c(c){return function(a){return function(c){if(n)throw new TypeError("Generator is already executing.");for(;o&&(o=0,c[0]&&(u=0)),u;)try{if(n=1,r&&(i=2&c[0]?r.return:c[0]?r.throw||((i=r.return)&&i.call(r),0):r.next)&&!(i=i.call(r,c[1])).done)return i;switch(r=0,i&&(c=[2&c[0],i.value]),c[0]){case 0:case 1:i=c;break;case 4:return u.label++,{value:c[1],done:!1};case 5:u.label++,r=c[1],c=[0];continue;case 7:c=u.ops.pop(),u.trys.pop();continue;default:if(!(i=u.trys,(i=i.length>0&&i[i.length-1])||6!==c[0]&&2!==c[0])){u=0;continue}if(3===c[0]&&(!i||c[1]>i[0]&&c[1]<i[3])){u.label=c[1];break}if(6===c[0]&&u.label<i[1]){u.label=i[1],i=c;break}if(i&&u.label<i[2]){u.label=i[2],u.ops.push(c);break}i[2]&&u.ops.pop(),u.trys.pop();continue}c=e.call(t,u)}catch(t){c=[6,t],r=0}finally{n=i=0}if(5&c[0])throw c[1];return{value:c[0]?c[1]:void 0,done:!0}}([c,a])}}}var r,i=(r=0,function(){return r+=1,"u".concat("0000".concat((Math.random()*Math.pow(36,4)<<0).toString(36)).slice(-4)).concat(r)});function o(t){for(var e=[],n=0,r=t.length;n<r;n++)e.push(t[n]);return e}function u(t,e){var n=(t.ownerDocument.defaultView||window).getComputedStyle(t).getPropertyValue(e);return n?parseFloat(n.replace("px","")):0}function c(t,e){void 0===e&&(e={});var n,r,i,o=e.width||(r=u(n=t,"border-left-width"),i=u(n,"border-right-width"),n.clientWidth+r+i),c=e.height||function(t){var e=u(t,"border-top-width"),n=u(t,"border-bottom-width");return t.clientHeight+e+n}(t);return{width:o,height:c}}var a=16384;function s(t,e){return void 0===e&&(e={}),t.toBlob?new Promise((function(n){t.toBlob(n,e.type?e.type:"image/png",e.quality?e.quality:1)})):new Promise((function(n){for(var r=window.atob(t.toDataURL(e.type?e.type:void 0,e.quality?e.quality:void 0).split(",")[1]),i=r.length,o=new Uint8Array(i),u=0;u<i;u+=1)o[u]=r.charCodeAt(u);n(new Blob([o],{type:e.type?e.type:"image/png"}))}))}function l(t){return new Promise((function(e,n){var r=new Image;r.decode=function(){return e(r)},r.onload=function(){return e(r)},r.onerror=n,r.crossOrigin="anonymous",r.decoding="async",r.src=t}))}function f(t){return e(this,void 0,void 0,(function(){return n(this,(function(e){return[2,Promise.resolve().then((function(){return(new XMLSerializer).serializeToString(t)})).then(encodeURIComponent).then((function(t){return"data:image/svg+xml;charset=utf-8,".concat(t)}))]}))}))}function h(t,r,i){return e(this,void 0,void 0,(function(){var e,o,u;return n(this,(function(n){return e="http://www.w3.org/2000/svg",o=document.createElementNS(e,"svg"),u=document.createElementNS(e,"foreignObject"),o.setAttribute("width","".concat(r)),o.setAttribute("height","".concat(i)),o.setAttribute("viewBox","0 0 ".concat(r," ").concat(i)),u.setAttribute("width","100%"),u.setAttribute("height","100%"),u.setAttribute("x","0"),u.setAttribute("y","0"),u.setAttribute("externalResourcesRequired","true"),o.appendChild(u),u.appendChild(t),[2,f(o)]}))}))}var d=function(t,e){if(t instanceof e)return!0;var n=Object.getPrototypeOf(t);return null!==n&&(n.constructor.name===e.name||d(n,e))};function v(t,e,n){var r=".".concat(t,":").concat(e),i=n.cssText?function(t){var e=t.getPropertyValue("content");return"".concat(t.cssText," content: '").concat(e.replace(/'|"/g,""),"';")}(n):function(t){return o(t).map((function(e){var n=t.getPropertyValue(e),r=t.getPropertyPriority(e);return"".concat(e,": ").concat(n).concat(r?" !important":"",";")})).join(" ")}(n);return document.createTextNode("".concat(r,"{").concat(i,"}"))}function p(t,e,n){var r=window.getComputedStyle(t,n),o=r.getPropertyValue("content");if(""!==o&&"none"!==o){var u=i();try{e.className="".concat(e.className," ").concat(u)}catch(t){return}var c=document.createElement("style");c.appendChild(v(u,n,r)),e.appendChild(c)}}var g="application/font-woff",m="image/jpeg",w={woff:g,woff2:g,ttf:"application/font-truetype",eot:"application/vnd.ms-fontobject",png:"image/png",jpg:m,jpeg:m,gif:"image/gif",tiff:"image/tiff",svg:"image/svg+xml",webp:"image/webp"};function b(t){var e=function(t){var e=/\.([^./]*?)$/g.exec(t);return e?e[1]:""}(t).toLowerCase();return w[e]||""}function y(t){return-1!==t.search(/^(data:)/)}function x(t,e){return"data:".concat(e,";base64,").concat(t)}function S(t,r,i){return e(this,void 0,void 0,(function(){var e,o;return n(this,(function(n){switch(n.label){case 0:return[4,fetch(t,r)];case 1:if(404===(e=n.sent()).status)throw new Error('Resource "'.concat(e.url,'" not found'));return[4,e.blob()];case 2:return o=n.sent(),[2,new Promise((function(t,n){var r=new FileReader;r.onerror=n,r.onloadend=function(){try{t(i({res:e,result:r.result}))}catch(t){n(t)}},r.readAsDataURL(o)}))]}}))}))}var E={};function C(t,r,i){return e(this,void 0,void 0,(function(){var e,o,u,c,a;return n(this,(function(n){switch(n.label){case 0:if(e=function(t,e,n){var r=t.replace(/\?.*/,"");return n&&(r=t),/ttf|otf|eot|woff2?/i.test(r)&&(r=r.replace(/.*\//,"")),e?"[".concat(e,"]").concat(r):r}(t,r,i.includeQueryParams),null!=E[e])return[2,E[e]];i.cacheBust&&(t+=(/\?/.test(t)?"&":"?")+(new Date).getTime()),n.label=1;case 1:return n.trys.push([1,3,,4]),[4,S(t,i.fetchRequestInit,(function(t){var e=t.res,n=t.result;return r||(r=e.headers.get("Content-Type")||""),function(t){return t.split(/,/)[1]}(n)}))];case 2:return u=n.sent(),o=x(u,r),[3,4];case 3:return c=n.sent(),o=i.imagePlaceholder||"",a="Failed to fetch resource: ".concat(t),c&&(a="string"==typeof c?c:c.message),a&&console.warn(a),[3,4];case 4:return E[e]=o,[2,o]}}))}))}function P(t){return e(this,void 0,void 0,(function(){var e;return n(this,(function(n){return"data:,"===(e=t.toDataURL())?[2,t.cloneNode(!1)]:[2,l(e)]}))}))}function R(t,r){return e(this,void 0,void 0,(function(){var e,i,o,u;return n(this,(function(n){switch(n.label){case 0:return t.currentSrc?(e=document.createElement("canvas"),i=e.getContext("2d"),e.width=t.clientWidth,e.height=t.clientHeight,null==i||i.drawImage(t,0,0,e.width,e.height),[2,l(e.toDataURL())]):(o=t.poster,u=b(o),[4,C(o,u,r)]);case 1:return[2,l(n.sent())]}}))}))}function T(t){var r;return e(this,void 0,void 0,(function(){return n(this,(function(e){switch(e.label){case 0:return e.trys.push([0,3,,4]),(null===(r=null==t?void 0:t.contentDocument)||void 0===r?void 0:r.body)?[4,L(t.contentDocument.body,{},!0)]:[3,2];case 1:return[2,e.sent()];case 2:return[3,4];case 3:return e.sent(),[3,4];case 4:return[2,t.cloneNode(!1)]}}))}))}function A(t,e){return d(e,Element)&&(function(t,e){var n=e.style;if(n){var r=window.getComputedStyle(t);r.cssText?(n.cssText=r.cssText,n.transformOrigin=r.transformOrigin):o(r).forEach((function(i){var o=r.getPropertyValue(i);if("font-size"===i&&o.endsWith("px")){var u=Math.floor(parseFloat(o.substring(0,o.length-2)))-.1;o="".concat(u,"px")}d(t,HTMLIFrameElement)&&"display"===i&&"inline"===o&&(o="block"),"d"===i&&e.getAttribute("d")&&(o="path(".concat(e.getAttribute("d"),")")),n.setProperty(i,o,r.getPropertyPriority(i))}))}}(t,e),function(t,e){p(t,e,":before"),p(t,e,":after")}(t,e),function(t,e){d(t,HTMLTextAreaElement)&&(e.innerHTML=t.value),d(t,HTMLInputElement)&&e.setAttribute("value",t.value)}(t,e),function(t,e){if(d(t,HTMLSelectElement)){var n=e,r=Array.from(n.children).find((function(e){return t.value===e.getAttribute("value")}));r&&r.setAttribute("selected","")}}(t,e)),e}function L(t,r,i){return e(this,void 0,void 0,(function(){return n(this,(function(u){return i||!r.filter||r.filter(t)?[2,Promise.resolve(t).then((function(t){return function(t,r){return e(this,void 0,void 0,(function(){return n(this,(function(e){return d(t,HTMLCanvasElement)?[2,P(t)]:d(t,HTMLVideoElement)?[2,R(t,r)]:d(t,HTMLIFrameElement)?[2,T(t)]:[2,t.cloneNode(!1)]}))}))}(t,r)})).then((function(i){return function(t,r,i){var u,c;return e(this,void 0,void 0,(function(){var e;return n(this,(function(n){switch(n.label){case 0:return e=[],0===(e=null!=(a=t).tagName&&"SLOT"===a.tagName.toUpperCase()&&t.assignedNodes?o(t.assignedNodes()):d(t,HTMLIFrameElement)&&(null===(u=t.contentDocument)||void 0===u?void 0:u.body)?o(t.contentDocument.body.childNodes):o((null!==(c=t.shadowRoot)&&void 0!==c?c:t).childNodes)).length||d(t,HTMLVideoElement)?[2,r]:[4,e.reduce((function(t,e){return t.then((function(){return L(e,i)})).then((function(t){t&&r.appendChild(t)}))}),Promise.resolve())];case 1:return n.sent(),[2,r]}var a}))}))}(t,i,r)})).then((function(e){return A(t,e)})).then((function(t){return function(t,r){return e(this,void 0,void 0,(function(){var e,i,o,u,c,a,s,l,f,h,d,v,p;return n(this,(function(n){switch(n.label){case 0:if(0===(e=t.querySelectorAll?t.querySelectorAll("use"):[]).length)return[2,t];i={},p=0,n.label=1;case 1:return p<e.length?(o=e[p],(u=o.getAttribute("xlink:href"))?(c=t.querySelector(u),a=document.querySelector(u),c||!a||i[u]?[3,3]:(s=i,l=u,[4,L(a,r,!0)])):[3,3]):[3,4];case 2:s[l]=n.sent(),n.label=3;case 3:return p++,[3,1];case 4:if((f=Object.values(i)).length){for(h="http://www.w3.org/1999/xhtml",(d=document.createElementNS(h,"svg")).setAttribute("xmlns",h),d.style.position="absolute",d.style.width="0",d.style.height="0",d.style.overflow="hidden",d.style.display="none",v=document.createElementNS(h,"defs"),d.appendChild(v),p=0;p<f.length;p++)v.appendChild(f[p]);t.appendChild(d)}return[2,t]}}))}))}(t,r)}))]:[2,null]}))}))}var N=/url\((['"]?)([^'"]+?)\1\)/g,k=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,I=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function D(t,r,i,o,u){return e(this,void 0,void 0,(function(){var e,c,a,s;return n(this,(function(n){switch(n.label){case 0:return n.trys.push([0,5,,6]),e=i?function(t,e){if(t.match(/^[a-z]+:\/\//i))return t;if(t.match(/^\/\//))return window.location.protocol+t;if(t.match(/^[a-z]+:/i))return t;var n=document.implementation.createHTMLDocument(),r=n.createElement("base"),i=n.createElement("a");return n.head.appendChild(r),n.body.appendChild(i),e&&(r.href=e),i.href=t,i.href}(r,i):r,c=b(r),a=void 0,u?[4,u(e)]:[3,2];case 1:return s=n.sent(),a=x(s,c),[3,4];case 2:return[4,C(e,c,o)];case 3:a=n.sent(),n.label=4;case 4:return[2,t.replace((l=r,f=l.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1"),new RegExp("(url\\(['\"]?)(".concat(f,")(['\"]?\\))"),"g")),"$1".concat(a,"$3"))];case 5:return n.sent(),[3,6];case 6:return[2,t]}var l,f}))}))}function M(t){return-1!==t.search(N)}function H(t,r,i){return e(this,void 0,void 0,(function(){var e,o;return n(this,(function(n){return M(t)?(e=function(t,e){var n=e.preferredFontFormat;return n?t.replace(I,(function(t){for(;;){var e=k.exec(t)||[],r=e[0],i=e[2];if(!i)return"";if(i===n)return"src: ".concat(r,";")}})):t}(t,i),o=function(t){var e=[];return t.replace(N,(function(t,n,r){return e.push(r),t})),e.filter((function(t){return!y(t)}))}(e),[2,o.reduce((function(t,e){return t.then((function(t){return D(t,e,r,i)}))}),Promise.resolve(e))]):[2,t]}))}))}function V(t,r,i){var o;return e(this,void 0,void 0,(function(){var e,u;return n(this,(function(n){switch(n.label){case 0:return(e=null===(o=r.style)||void 0===o?void 0:o.getPropertyValue(t))?[4,H(e,null,i)]:[3,2];case 1:return u=n.sent(),r.style.setProperty(t,u,r.style.getPropertyPriority(t)),[2,!0];case 2:return[2,!1]}}))}))}function F(t,r){return e(this,void 0,void 0,(function(){return n(this,(function(e){switch(e.label){case 0:return[4,V("background",t,r)];case 1:return e.sent()?[3,3]:[4,V("background-image",t,r)];case 2:e.sent(),e.label=3;case 3:return[4,V("mask",t,r)];case 4:return e.sent()?[3,6]:[4,V("mask-image",t,r)];case 5:e.sent(),e.label=6;case 6:return[2]}}))}))}function j(t,r){return e(this,void 0,void 0,(function(){var e,i,o;return n(this,(function(n){switch(n.label){case 0:return(e=d(t,HTMLImageElement))&&!y(t.src)||d(t,SVGImageElement)&&!y(t.href.baseVal)?[4,C(i=e?t.src:t.href.baseVal,b(i),r)]:[2];case 1:return o=n.sent(),[4,new Promise((function(n,r){t.onload=n,t.onerror=r;var i=t;i.decode&&(i.decode=n),"lazy"===i.loading&&(i.loading="eager"),e?(t.srcset="",t.src=o):t.href.baseVal=o}))];case 2:return n.sent(),[2]}}))}))}function q(t,r){return e(this,void 0,void 0,(function(){var e,i;return n(this,(function(n){switch(n.label){case 0:return e=o(t.childNodes),i=e.map((function(t){return U(t,r)})),[4,Promise.all(i).then((function(){return t}))];case 1:return n.sent(),[2]}}))}))}function U(t,r){return e(this,void 0,void 0,(function(){return n(this,(function(e){switch(e.label){case 0:return d(t,Element)?[4,F(t,r)]:[3,4];case 1:return e.sent(),[4,j(t,r)];case 2:return e.sent(),[4,q(t,r)];case 3:e.sent(),e.label=4;case 4:return[2]}}))}))}var O={};function B(t){return e(this,void 0,void 0,(function(){var e,r;return n(this,(function(n){switch(n.label){case 0:return null!=(e=O[t])?[2,e]:[4,fetch(t)];case 1:return[4,n.sent().text()];case 2:return r=n.sent(),e={url:t,cssText:r},O[t]=e,[2,e]}}))}))}function z(t,r){return e(this,void 0,void 0,(function(){var i,o,u,c,a=this;return n(this,(function(s){return i=t.cssText,o=/url\(["']?([^"')]+)["']?\)/g,u=i.match(/url\([^)]+\)/g)||[],c=u.map((function(u){return e(a,void 0,void 0,(function(){var e;return n(this,(function(n){return(e=u.replace(o,"$1")).startsWith("https://")||(e=new URL(e,t.url).href),[2,S(e,r.fetchRequestInit,(function(t){var e=t.result;return i=i.replace(u,"url(".concat(e,")")),[u,e]}))]}))}))})),[2,Promise.all(c).then((function(){return i}))]}))}))}function W(t){if(null==t)return[];for(var e=[],n=t.replace(/(\/\*[\s\S]*?\*\/)/gi,""),r=new RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){if(null===(u=r.exec(n)))break;e.push(u[0])}n=n.replace(r,"");for(var i=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi,o=new RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){var u;if(null===(u=i.exec(n))){if(null===(u=o.exec(n)))break;i.lastIndex=o.lastIndex}else o.lastIndex=i.lastIndex;e.push(u[0])}return e}function $(t,r){return e(this,void 0,void 0,(function(){var e,i;return n(this,(function(n){return e=[],i=[],t.forEach((function(e){if("cssRules"in e)try{o(e.cssRules||[]).forEach((function(t,n){if(t.type===CSSRule.IMPORT_RULE){var o=n+1,u=B(t.href).then((function(t){return z(t,r)})).then((function(t){return W(t).forEach((function(t){try{e.insertRule(t,t.startsWith("@import")?o+=1:e.cssRules.length)}catch(e){console.error("Error inserting rule from remote css",{rule:t,error:e})}}))})).catch((function(t){console.error("Error loading remote css",t.toString())}));i.push(u)}}))}catch(o){var n=t.find((function(t){return null==t.href}))||document.styleSheets[0];null!=e.href&&i.push(B(e.href).then((function(t){return z(t,r)})).then((function(t){return W(t).forEach((function(t){n.insertRule(t,e.cssRules.length)}))})).catch((function(t){console.error("Error loading remote stylesheet",t)}))),console.error("Error inlining remote css file",o)}})),[2,Promise.all(i).then((function(){return t.forEach((function(t){if("cssRules"in t)try{o(t.cssRules||[]).forEach((function(t){e.push(t)}))}catch(e){console.error("Error while reading CSS rules from ".concat(t.href),e)}})),e}))]}))}))}function _(t){return t.filter((function(t){return t.type===CSSRule.FONT_FACE_RULE})).filter((function(t){return M(t.style.getPropertyValue("src"))}))}function G(t,r){return e(this,void 0,void 0,(function(){return n(this,(function(e){switch(e.label){case 0:if(null==t.ownerDocument)throw new Error("Provided element is not within a Document");return[4,$(o(t.ownerDocument.styleSheets),r)];case 1:return[2,_(e.sent())]}}))}))}function J(t,r){return e(this,void 0,void 0,(function(){var e;return n(this,(function(n){switch(n.label){case 0:return[4,G(t,r)];case 1:return e=n.sent(),[4,Promise.all(e.map((function(t){var e=t.parentStyleSheet?t.parentStyleSheet.href:null;return H(t.cssText,e,r)})))];case 2:return[2,n.sent().join("\n")]}}))}))}function Q(t,r){return e(this,void 0,void 0,(function(){var e,i,o,u,c;return n(this,(function(n){switch(n.label){case 0:return null==r.fontEmbedCSS?[3,1]:(i=r.fontEmbedCSS,[3,5]);case 1:return r.skipFonts?(o=null,[3,4]):[3,2];case 2:return[4,J(t,r)];case 3:o=n.sent(),n.label=4;case 4:i=o,n.label=5;case 5:return(e=i)&&(u=document.createElement("style"),c=document.createTextNode(e),u.appendChild(c),t.firstChild?t.insertBefore(u,t.firstChild):t.appendChild(u)),[2]}}))}))}function X(t,r){return void 0===r&&(r={}),e(this,void 0,void 0,(function(){var e,i,o,u;return n(this,(function(n){switch(n.label){case 0:return e=c(t,r),i=e.width,o=e.height,[4,L(t,r,!0)];case 1:return[4,Q(u=n.sent(),r)];case 2:return n.sent(),[4,U(u,r)];case 3:return n.sent(),function(t,e){var n=t.style;e.backgroundColor&&(n.backgroundColor=e.backgroundColor),e.width&&(n.width="".concat(e.width,"px")),e.height&&(n.height="".concat(e.height,"px"));var r=e.style;null!=r&&Object.keys(r).forEach((function(t){n[t]=r[t]}))}(u,r),[4,h(u,i,o)];case 4:return[2,n.sent()]}}))}))}function K(t,r){return void 0===r&&(r={}),e(this,void 0,void 0,(function(){var e,i,o,u,s,f,h,d,v;return n(this,(function(n){switch(n.label){case 0:return e=c(t,r),i=e.width,o=e.height,[4,X(t,r)];case 1:return[4,l(n.sent())];case 2:return u=n.sent(),s=document.createElement("canvas"),f=s.getContext("2d"),h=r.pixelRatio||function(){var t,e;try{e=process}catch(t){}var n=e&&e.env?e.env.devicePixelRatio:null;return n&&(t=parseInt(n,10),Number.isNaN(t)&&(t=1)),t||window.devicePixelRatio||1}(),d=r.canvasWidth||i,v=r.canvasHeight||o,s.width=d*h,s.height=v*h,r.skipAutoScale||function(t){(t.width>a||t.height>a)&&(t.width>a&&t.height>a?t.width>t.height?(t.height*=a/t.width,t.width=a):(t.width*=a/t.height,t.height=a):t.width>a?(t.height*=a/t.width,t.width=a):(t.width*=a/t.height,t.height=a))}(s),s.style.width="".concat(d),s.style.height="".concat(v),r.backgroundColor&&(f.fillStyle=r.backgroundColor,f.fillRect(0,0,s.width,s.height)),f.drawImage(u,0,0,s.width,s.height),[2,s]}}))}))}t.getFontEmbedCSS=function(t,r){return void 0===r&&(r={}),e(this,void 0,void 0,(function(){return n(this,(function(e){return[2,J(t,r)]}))}))},t.toBlob=function(t,r){return void 0===r&&(r={}),e(this,void 0,void 0,(function(){return n(this,(function(e){switch(e.label){case 0:return[4,K(t,r)];case 1:return[4,s(e.sent())];case 2:return[2,e.sent()]}}))}))},t.toCanvas=K,t.toJpeg=function(t,r){return void 0===r&&(r={}),e(this,void 0,void 0,(function(){return n(this,(function(e){switch(e.label){case 0:return[4,K(t,r)];case 1:return[2,e.sent().toDataURL("image/jpeg",r.quality||1)]}}))}))},t.toPixelData=function(t,r){return void 0===r&&(r={}),e(this,void 0,void 0,(function(){var e,i,o,u;return n(this,(function(n){switch(n.label){case 0:return e=c(t,r),i=e.width,o=e.height,[4,K(t,r)];case 1:return u=n.sent(),[2,u.getContext("2d").getImageData(0,0,i,o).data]}}))}))},t.toPng=function(t,r){return void 0===r&&(r={}),e(this,void 0,void 0,(function(){return n(this,(function(e){switch(e.label){case 0:return[4,K(t,r)];case 1:return[2,e.sent().toDataURL()]}}))}))},t.toSvg=X}));
-//# sourceMappingURL=html-to-image.js.map
-</script>
+<script src="vendor/html-to-image.js"></script>
 <style>
 :root{
   --ui-bg:#f4f2ee; --ui-panel:#ffffff; --ui-border:#e0dfdc; --ui-text:#1d1d1d; --ui-muted:#666;
@@ -143,6 +140,32 @@ body.adv .adv-only{display:block}
 .li .bar div{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:12px;font-weight:600;color:var(--li-muted);padding:4px 8px}
 .li.desktop .pad-end{height:2px}
 .li.mobile .pad-end{height:0}
+
+/* ---------- library ---------- */
+.pill{font-size:11px;font-weight:600;color:var(--ui-muted);background:var(--ui-bg);border-radius:999px;padding:1px 8px;margin-left:6px;margin-right:auto}
+.editing{font-size:12px;color:var(--ui-muted);background:var(--ui-accent-weak);border-radius:6px;padding:6px 9px;margin-bottom:4px}
+.editing:empty{display:none}
+.editing b{color:var(--ui-text)}
+.lib-list{margin-top:10px;border:1px solid var(--ui-border);border-radius:8px;max-height:320px;overflow-y:auto}
+.lib-list:empty::before{content:"No mockups in this group yet. Build one, then press Save as new mockup.";display:block;padding:12px;font-size:12px;color:var(--ui-muted)}
+.lrow{display:flex;gap:8px;align-items:center;padding:8px 10px;border-top:1px solid var(--ui-border)}
+.lrow:first-child{border-top:0}
+.lrow.cur{background:var(--ui-accent-weak)}
+.lrow .t{flex:1;min-width:0}
+.lrow .t b{display:block;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lrow .t small{display:block;font-size:11px;color:var(--ui-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lrow .a{display:flex;gap:4px;flex:0 0 auto}
+.lrow select{width:32px;padding:4px 0;font-size:13px;border-radius:999px;-webkit-appearance:none;appearance:none;text-align:center;text-align-last:center;cursor:pointer}
+.bulk{margin-top:12px;padding:10px;border:1px dashed var(--ui-border);border-radius:8px}
+dialog{border:1px solid var(--ui-border);border-radius:12px;background:var(--ui-panel);color:var(--ui-text);padding:16px;width:min(360px,calc(100vw - 32px))}
+dialog::backdrop{background:rgba(0,0,0,.35)}
+dialog h3{margin:0 0 10px;font-size:15px}
+dialog .dlg-btns{flex-direction:row-reverse;justify-content:flex-start;margin-top:14px}
+dialog select{margin-top:2px}
+.busy{position:fixed;inset:0;background:rgba(0,0,0,.25);display:none;align-items:center;justify-content:center;z-index:8}
+.busy.show{display:flex}
+.busy div{background:var(--ui-panel);color:var(--ui-text);padding:14px 18px;border-radius:10px;font-size:13px;box-shadow:0 6px 24px rgba(0,0,0,.2)}
+#offstage{position:fixed;left:-10000px;top:0;pointer-events:none}
 </style>
 </head>
 <body>
@@ -158,6 +181,59 @@ body.adv .adv-only{display:block}
       </div>
     </div>
 
+    <details class="sec" open id="libSec">
+      <summary>Library <span class="pill" id="libCount"></span></summary>
+      <div class="sec-body">
+        <div class="editing" id="editing"></div>
+        <label class="f">Group</label>
+        <select id="groupSel"></select>
+        <div class="presets">
+          <button class="btn sm" id="gNew">New group</button>
+          <button class="btn sm" id="gRename">Rename group</button>
+          <button class="btn sm danger" id="gDelete">Delete group</button>
+        </div>
+        <div class="presets" style="margin-top:10px">
+          <button class="btn sm primary" id="mSave">Save as new mockup</button>
+          <button class="btn sm" id="mUpdate">Save changes</button>
+        </div>
+        <div class="lib-list" id="libList"></div>
+        <p class="hint"><b>Open</b> edits a mockup as saved. <b>Use</b> puts its post on the profile you have open now, so any mockup works as a template.</p>
+
+        <div class="bulk">
+          <label class="f" style="margin-top:0"><b>Download this group as a ZIP</b></label>
+          <div class="row">
+            <div><label class="f">View</label>
+              <select id="bDevice">
+                <option value="as">As saved</option>
+                <option value="desktop">Desktop</option>
+                <option value="mobile">Mobile</option>
+                <option value="both">Desktop + mobile</option>
+              </select></div>
+            <div><label class="f">Text</label>
+              <select id="bExpand">
+                <option value="as">As saved</option>
+                <option value="0">In feed</option>
+                <option value="1">Expanded</option>
+                <option value="both">Both</option>
+              </select></div>
+          </div>
+          <label class="f">Profile</label>
+          <select id="bProfile"></select>
+          <p class="hint">Pick a saved profile to render the whole group as that person, e.g. reuse a template group for each leader.</p>
+          <div class="row" style="margin-top:8px">
+            <button class="btn primary shrink" id="bGo">Download ZIP</button>
+            <span class="hint" id="bStatus" style="margin:0"></span>
+          </div>
+        </div>
+
+        <div class="presets" style="margin-top:10px">
+          <button class="btn sm" id="libExport">Back up library</button>
+          <button class="btn sm" id="libImportBtn">Restore backup</button>
+          <input type="file" id="libImport" accept="application/json,.json" hidden>
+        </div>
+      </div>
+    </details>
+
     <details class="sec" open>
       <summary>Profile</summary>
       <div class="sec-body">
@@ -168,6 +244,7 @@ body.adv .adv-only{display:block}
         <div class="presets">
           <button class="btn sm" id="pSaveNew">Save as new</button>
           <button class="btn sm" id="pUpdate">Update</button>
+          <button class="btn sm" id="pRename">Rename</button>
           <button class="btn sm danger" id="pDelete">Delete</button>
           <button class="btn sm" id="pExport">Export</button>
           <button class="btn sm" id="pImportBtn">Import</button>
@@ -332,432 +409,21 @@ body.adv .adv-only{display:block}
   </main>
 </div>
 <div class="toast" id="toast"></div>
+<div class="busy" id="busy"><div id="busyMsg">Working…</div></div>
+<div id="offstage"></div>
+<dialog id="dlg">
+  <form method="dialog">
+    <h3 id="dlgTitle"></h3>
+    <input type="text" id="dlgText">
+    <select id="dlgSelect"></select>
+    <p class="hint" id="dlgHint"></p>
+    <div class="presets dlg-btns">
+      <button class="btn primary" value="ok" id="dlgOk">OK</button>
+      <button class="btn" value="cancel" formnovalidate>Cancel</button>
+    </div>
+  </form>
+</dialog>
 
-<script>
-(function(){
-'use strict';
-const $ = (s, r=document) => r.querySelector(s);
-const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
-const LS_STATE = 'lpp.state.v1', LS_PROFILES = 'lpp.profiles.v1';
-
-const SAMPLE_TEXT = '"Priority" has no plural. The moment you have 5, you have a to-do list\n\nHere\'s why. By the time you finish your one priority, the rest might not matter anymore. Markets move. Customers change their minds. Your team learns something new.\n\nSo stop ranking five things.\n\nPick one. Do it. Then pick again.\n\n#leadership #focus';
-
-const DEFAULT = {
-  mode:'basic',
-  profile:{first:'Jonny', last:'Chan', photo:'', bio:'B2B Marketer, ex-Coalition, ex-Meta. Building demand gen & revenue engine', badge:'premium', degree:'You', cta:''},
-  post:{format:'text', text:SAMPLE_TEXT, image:'', videoThumb:'', duration:'1:24', time:'2h', edited:false},
-  rs:{name:'FoundersHK', photo:'', bio:'', time:'3w', text:'Getting into Southeast Asia is one thing - winning customers and scaling across it is another.', image:''},
-  eng:{reactions:301, comments:21, reposts:1},
-  view:{device:'desktop', mobileWidth:390, expanded:false},
-  fold:{linesText:3, linesMedia:2, shortOn:true, shortChars:250}
-};
-
-function clone(o){ return JSON.parse(JSON.stringify(o)); }
-function merge(base, over){
-  const out = clone(base);
-  if (!over || typeof over !== 'object') return out;
-  for (const k of Object.keys(base)){
-    if (over[k] === undefined) continue;
-    if (base[k] && typeof base[k] === 'object') out[k] = Object.assign(out[k], over[k]);
-    else out[k] = over[k];
-  }
-  return out;
-}
-function lsGet(k){ try { return JSON.parse(localStorage.getItem(k)); } catch(e){ return null; } }
-function lsSet(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch(e){ return false; } }
-
-let S = merge(DEFAULT, lsGet(LS_STATE));
-let profiles = lsGet(LS_PROFILES) || [];
-let saveTimer = null, warnedQuota = false;
-function persist(){
-  clearTimeout(saveTimer);
-  saveTimer = setTimeout(() => {
-    if (!lsSet(LS_STATE, S)){
-      // Probably over quota because of big images: retry without post media.
-      const lite = clone(S); lite.post.image = ''; lite.post.videoThumb = ''; lite.rs.image = '';
-      if (!lsSet(LS_STATE, lite) && !warnedQuota){ warnedQuota = true; toast('Browser storage is full; draft will not be remembered'); }
-    }
-  }, 300);
-}
-
-function toast(msg){
-  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
-  clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 2200);
-}
-
-/* ---------- image upload with downscale ---------- */
-function readImage(file, maxSide, quality){
-  return new Promise((resolve, reject) => {
-    const fr = new FileReader();
-    fr.onerror = reject;
-    fr.onload = () => {
-      const img = new Image();
-      img.onerror = reject;
-      img.onload = () => {
-        const scale = Math.min(1, maxSide / Math.max(img.width, img.height));
-        const w = Math.round(img.width * scale), h = Math.round(img.height * scale);
-        const c = document.createElement('canvas'); c.width = w; c.height = h;
-        const ctx = c.getContext('2d'); ctx.fillStyle = '#fff'; ctx.fillRect(0,0,w,h);
-        ctx.drawImage(img, 0, 0, w, h);
-        resolve(c.toDataURL('image/jpeg', quality));
-      };
-      img.src = fr.result;
-    };
-    fr.readAsDataURL(file);
-  });
-}
-function bindImage(inputId, thumbId, clearId, get, set, maxSide){
-  const inp = $('#'+inputId), th = $('#'+thumbId);
-  const sync = () => { const v = get(); th.src = v || 'data:image/gif;base64,R0lGODlhAQABAAAAACw='; th.style.visibility = v ? 'visible' : 'hidden'; };
-  inp.addEventListener('change', async () => {
-    const f = inp.files && inp.files[0]; if (!f) return;
-    try { set(await readImage(f, maxSide, 0.88)); } catch(e){ toast('Could not read that image'); }
-    inp.value = ''; sync(); update();
-  });
-  $('#'+clearId).addEventListener('click', () => { set(''); sync(); update(); });
-  return sync;
-}
-
-/* ---------- icons (simple original drawings) ---------- */
-const ICON = {
-  globe:'<svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zm4.87 6h-2.4a11.6 11.6 0 00-.9-4A5 5 0 0112.87 7zM8 13c-.6 0-1.4-1.7-1.6-4h3.2c-.2 2.3-1 4-1.6 4zM6.4 7C6.6 4.7 7.4 3 8 3s1.4 1.7 1.6 4zM6.43 3a11.6 11.6 0 00-.9 4h-2.4a5 5 0 013.3-4zM3.13 9h2.4a11.6 11.6 0 00.9 4 5 5 0 01-3.3-4zm6.44 4a11.6 11.6 0 00.9-4h2.4a5 5 0 01-3.3 4z"/></svg>',
-  dots:'<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>',
-  x:'<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
-  plus:'<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3v10M3 8h10"/></svg>',
-  caret:'<svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M3 6l5 5 5-5z"/></svg>',
-  like:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M7 10v10H4V10zM7 10l4-7c1.4 0 2.3 1 2 2.4L12.4 9H19a2 2 0 012 2.3l-1.3 7A2 2 0 0117.7 20H7"/></svg>',
-  comment:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg>',
-  repost:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l3 3-3 3"/><path d="M20 6H8a3 3 0 00-3 3v2"/><path d="M7 21l-3-3 3-3"/><path d="M4 18h12a3 3 0 003-3v-2"/></svg>',
-  send:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M21 3L3 10.5l7 3 3 7.5z"/><path d="M10 13.5L21 3"/></svg>',
-  play:'<svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>',
-  premium:'<svg width="16" height="16" viewBox="0 0 16 16"><rect width="16" height="16" rx="3" fill="#c37d16"/><path fill="#fff" d="M3.5 6.2h1.9V12H3.5zM4.45 3.3a1.05 1.05 0 110 2.1 1.05 1.05 0 010-2.1zM6.6 6.2h1.8V7c.3-.5.9-1 1.9-1 1.9 0 2.3 1.2 2.3 2.9V12h-1.9V9.3c0-.7 0-1.5-1-1.5s-1.1.7-1.1 1.5V12H6.6z"/></svg>',
-  verified:'<svg width="16" height="16" viewBox="0 0 16 16"><path fill="#56687a" d="M8 1l5.5 2v4.2c0 3.5-2.4 6.3-5.5 7.8-3.1-1.5-5.5-4.3-5.5-7.8V3z"/><path fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M5.4 8.1l1.8 1.8 3.5-3.6"/></svg>'
-};
-const CHIP = {
-  like:'<svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#378fe9"/><path fill="#fff" d="M4.3 7.2h1.5v4.6H4.3zM6.4 7.2l1.9-3c.6 0 1 .5.9 1.1l-.3 1.5h2.6c.6 0 1 .5.9 1.1l-.6 3c-.1.5-.5.9-1 .9H6.4z"/></svg>',
-  celebrate:'<svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#44712e"/><path fill="#fff" d="M5 12.5l1.6-6.3 4.7 4.7zM9.4 3.2l.5 1.4M12.6 5.4l-1.4.6M11.3 3.6l-.9 1.2" stroke="#fff" stroke-width="1" stroke-linecap="round"/></svg>',
-  love:'<svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#df704d"/><path fill="#fff" d="M8 12.2S3.8 9.6 3.8 6.9A2.1 2.1 0 018 6a2.1 2.1 0 014.2.9c0 2.7-4.2 5.3-4.2 5.3z"/></svg>'
-};
-
-/* ---------- helpers ---------- */
-const fmt = n => Number(n || 0).toLocaleString('en-US');
-function esc(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-function rich(s){
-  // escape, then blue-highlight hashtags, @mentions and URLs (like the feed does)
-  return esc(s).replace(/(https?:\/\/[^\s<]+|www\.[^\s<]+|(?:^|(?<=\s))[#@][\p{L}\p{N}_]+)/gu, '<span class="hl">$1</span>');
-}
-function initials(name){ return (name || '?').split(/\s+/).filter(Boolean).slice(0,2).map(w => w[0].toUpperCase()).join(''); }
-function avatar(photo, name){
-  return photo ? `<div class="av"><img src="${photo}" alt=""></div>` : `<div class="av" style="background:#8a9bab">${esc(initials(name))}</div>`;
-}
-function badgeHtml(b){ return b === 'premium' ? `<span class="badge">${ICON.premium}</span>` : b === 'verified' ? `<span class="badge">${ICON.verified}</span>` : ''; }
-function hasMedia(){
-  const f = S.post.format;
-  return f === 'photo' || f === 'video' || f === 'reshare';
-}
-function chipsFor(n){
-  const kinds = n >= 50 ? ['like','celebrate','love'] : n >= 5 ? ['like','love'] : n > 0 ? ['like'] : [];
-  return `<span class="chips">${kinds.map(k => CHIP[k]).join('')}</span>`;
-}
-
-/* ---------- the fold ---------- */
-// Truncate `text` into element `el` so that text + "... more" fits in `lines` lines.
-// Returns number of characters visible before the fold (or -1 if not truncated).
-function fold(el, text, lines, allowShort){
-  el.innerHTML = rich(text);
-  if (S.view.expanded || !text) return -1;
-  if (allowShort && S.fold.shortOn && text.length <= S.fold.shortChars) return -1;
-  const lh = parseFloat(getComputedStyle(el).lineHeight) || 20;
-  const pad = parseFloat(getComputedStyle(el).paddingTop) || 0;
-  const limit = lines * lh + pad + 2;
-  if (el.offsetHeight <= limit) return -1;
-  const tail = '<span class="dots">…</span><span class="more"> more</span>';
-  const fits = n => { el.innerHTML = rich(text.slice(0, n).replace(/\s+$/, '')) + tail; return el.offsetHeight <= limit; };
-  let lo = 0, hi = text.length;
-  while (lo < hi){ const mid = (lo + hi + 1) >> 1; if (fits(mid)) lo = mid; else hi = mid - 1; }
-  // LinkedIn tends to break at a word boundary
-  let n = lo; const sp = text.slice(0, n).search(/\s\S*$/);
-  if (sp > n - 25 && sp > 0) n = sp;
-  fits(n);
-  return text.slice(0, n).replace(/\s+$/, '').length;
-}
-
-/* ---------- media box sizing (crop between 1.91:1 and 4:5 like the feed) ---------- */
-function mediaHtml(src, isVideo, width){
-  if (!src){
-    const h = Math.round(width / (isVideo ? 16/9 : 1.2));
-    return `<div class="media" style="height:${h}px"><div class="ph">${isVideo ? 'Upload a video thumbnail' : 'Upload a photo'}</div>${isVideo ? `<div class="play"><i>${ICON.play}</i></div>` : ''}</div>`;
-  }
-  return `<div class="media" data-src="1" style="height:${Math.round(width/1.2)}px"><img src="${src}" alt="">${isVideo ? `<div class="play"><i>${ICON.play}</i></div>${S.post.duration ? `<span class="dur">${esc(S.post.duration)}</span>` : ''}` : ''}</div>`;
-}
-function sizeMedia(root){
-  $$('.media[data-src] img', root).forEach(img => {
-    const box = img.parentElement;
-    const apply = () => {
-      const w = box.clientWidth; if (!w || !img.naturalWidth) return;
-      let r = img.naturalWidth / img.naturalHeight;
-      r = Math.max(0.8, Math.min(1.91, r));
-      box.style.height = Math.round(w / r) + 'px';
-    };
-    if (img.complete) apply(); else img.onload = apply;
-  });
-}
-
-/* ---------- render ---------- */
-function render(){
-  const P = S.profile, post = S.post, E = S.eng, V = S.view;
-  const mobile = V.device === 'mobile';
-  const W = mobile ? Number(V.mobileWidth) : 555;
-  const name = `${P.first} ${P.last}`.trim() || 'Your Name';
-  const time = `${esc(post.time || 'now')}${post.edited ? ' • Edited' : ''} • `;
-  const notSelf = P.degree !== 'You';
-
-  let tools = '';
-  if (mobile) tools = notSelf && P.degree !== '1st' && P.degree !== 'Following' ? `<span class="follow">${ICON.plus}Follow</span><span>${ICON.dots}</span>` : `<span>${ICON.dots}</span>`;
-  else tools = `<span>${ICON.dots}</span>${notSelf ? `<span>${ICON.x}</span>` : ''}`;
-
-  const header = `
-    <div class="hd">
-      ${avatar(P.photo, name)}
-      <div class="who">
-        <div class="nm"><b>${esc(name)}</b>${badgeHtml(P.badge)}<span class="deg"> • ${esc(P.degree)}</span></div>
-        <div class="bio">${esc(P.bio)}</div>
-        ${P.cta ? `<span class="cta">${esc(P.cta)}</span>` : ''}
-        <div class="time">${time}${ICON.globe}</div>
-      </div>
-      <div class="tools">${tools}</div>
-    </div>`;
-
-  let body = `<div class="txt" id="mainTxt"></div>`;
-  if (post.format === 'photo') body += mediaHtml(post.image, false, W);
-  if (post.format === 'video') body += mediaHtml(post.videoThumb, true, W);
-  if (post.format === 'reshare'){
-    const R = S.rs;
-    body += `<div class="rs">
-      <div class="hd">
-        ${avatar(R.photo, R.name)}
-        <div class="who">
-          <div class="nm"><b>${esc(R.name || 'Original author')}</b></div>
-          ${R.bio ? `<div class="bio">${esc(R.bio)}</div>` : ''}
-          <div class="time">${esc(R.time || '1d')} • ${ICON.globe}</div>
-        </div>
-      </div>
-      <div class="txt" id="rsTxt"></div>
-      ${R.image ? mediaHtml(R.image, false, W - 34) : '<div class="pad"></div>'}
-    </div>`;
-  }
-
-  let eng;
-  if (mobile){
-    const right = [E.comments ? `${fmt(E.comments)} comment${E.comments == 1 ? '' : 's'}` : '', E.reposts ? `${fmt(E.reposts)} repost${E.reposts == 1 ? '' : 's'}` : ''].filter(Boolean).join(' • ');
-    eng = `${(E.reactions || right) ? `<div class="cnt"><span class="l">${E.reactions ? chipsFor(E.reactions) + fmt(E.reactions) : ''}</span><span>${right}</span></div>` : '<div style="height:8px"></div>'}
-      <div class="bar">
-        <div>${ICON.like}Like</div><div>${ICON.comment}Comment</div><div>${ICON.repost}Repost</div><div>${ICON.send}Send</div>
-      </div>`;
-  } else {
-    const n = v => v ? `<span>${fmt(v)}</span>` : '';
-    eng = `<div class="eng">
-      <div class="acts">
-        <span class="me">${avatar(P.photo, name)}${ICON.caret}</span>
-        <span class="act">${ICON.like}${n(E.reactions)}</span>
-        <span class="act">${ICON.comment}${n(E.comments)}</span>
-        <span class="act">${ICON.repost}${n(E.reposts)}</span>
-        <span class="act">${ICON.send}</span>
-      </div>
-      ${chipsFor(E.reactions)}
-    </div>`;
-  }
-
-  const cap = $('#capture');
-  cap.className = 'capture ' + (mobile ? 'mobile' : 'desktop');
-  cap.innerHTML = `<div class="li ${mobile ? 'mobile' : 'desktop'}" style="${mobile ? `width:${W}px` : ''}">${header}${body}${eng}<div class="pad-end"></div></div>`;
-
-  const lines = hasMedia() ? S.fold.linesMedia : S.fold.linesText;
-  const shown = fold($('#mainTxt'), post.text, lines, true);
-  if (!post.text) $('#mainTxt').style.display = 'none';
-  if (post.format === 'reshare'){
-    const rl = S.rs.image ? S.fold.linesMedia : S.fold.linesText;
-    fold($('#rsTxt'), S.rs.text, rl, true);
-    if (!S.rs.text) $('#rsTxt').style.display = 'none';
-  }
-  sizeMedia(cap);
-
-  // fold info
-  const len = post.text.length;
-  const where = mobile ? `mobile (${W}px)` : 'desktop';
-  let info;
-  if (V.expanded) info = `Showing the full post as it looks after someone taps <b>…more</b>.`;
-  else if (shown < 0) info = `Whole post is visible on ${where}. No <b>…more</b> fold.`;
-  else {
-    const visible = post.text.slice(0, shown);
-    const hidden = len - shown;
-    info = `On ${where}, readers see <b>${shown}</b> characters before <b>…more</b> (${hidden} hidden). The fold lands after: “${esc(visible.split(/\s+/).slice(-6).join(' '))}”`;
-  }
-  $('#foldInfo').innerHTML = info;
-  $('#foldCount').textContent = shown < 0 ? 'No fold' : `${shown} chars above the fold`;
-  const cc = $('#charCount');
-  cc.textContent = `${fmt(len)} / 3,000`;
-  cc.className = len > 3000 ? 'warn' : '';
-}
-
-/* ---------- form wiring ---------- */
-function setSeg(id, v){ $$('#'+id+' button').forEach(b => b.classList.toggle('on', b.dataset.v === String(v))); }
-function bindSeg(id, onPick){
-  $$('#'+id+' button').forEach(b => b.addEventListener('click', () => { if (b.disabled) return; onPick(b.dataset.v); update(); }));
-}
-function bindField(id, obj, key, kind){
-  const el = $('#'+id);
-  const ev = el.type === 'checkbox' || el.tagName === 'SELECT' ? 'change' : 'input';
-  el.addEventListener(ev, () => {
-    const o = obj();
-    if (el.type === 'checkbox') o[key] = el.checked;
-    else if (kind === 'num') o[key] = Math.max(0, parseInt(el.value, 10) || 0);
-    else o[key] = el.value;
-    update();
-  });
-}
-function fillFields(){
-  const P = S.profile, p = S.post, R = S.rs, F = S.fold;
-  $('#first').value = P.first; $('#last').value = P.last; $('#bio').value = P.bio;
-  $('#badge').value = P.badge; $('#degree').value = P.degree; $('#cta').value = P.cta;
-  $('#text').value = p.text; $('#duration').value = p.duration; $('#time').value = p.time; $('#edited').checked = !!p.edited;
-  $('#rsName').value = R.name; $('#rsTime').value = R.time; $('#rsBio').value = R.bio; $('#rsText').value = R.text;
-  $('#linesText').value = F.linesText; $('#linesMedia').value = F.linesMedia; $('#shortOn').checked = !!F.shortOn; $('#shortChars').value = F.shortChars;
-  $('#mobileWidth').value = String(S.view.mobileWidth);
-  syncThumbs.forEach(f => f());
-  syncSliders();
-}
-
-// log-scale sliders: position 0..1000 -> 0..100000
-const toVal = p => p <= 0 ? 0 : Math.round(Math.pow(10, p / 1000 * 5));
-const toPos = v => v <= 0 ? 0 : Math.round(Math.log10(Math.max(1, v)) / 5 * 1000);
-function syncSliders(){
-  $$('.slider').forEach(s => {
-    const k = s.dataset.k;
-    $('input[type=number]', s).value = S.eng[k];
-    $('input[type=range]', s).value = toPos(S.eng[k]);
-  });
-}
-$$('.slider').forEach(s => {
-  const k = s.dataset.k, num = $('input[type=number]', s), rng = $('input[type=range]', s);
-  rng.addEventListener('input', () => { S.eng[k] = toVal(+rng.value); num.value = S.eng[k]; update(); });
-  num.addEventListener('input', () => { S.eng[k] = Math.max(0, parseInt(num.value, 10) || 0); rng.value = toPos(S.eng[k]); update(); });
-});
-$$('[data-preset]').forEach(b => b.addEventListener('click', () => {
-  const [r, c, p] = b.dataset.preset.split(',').map(Number);
-  Object.assign(S.eng, {reactions:r, comments:c, reposts:p}); syncSliders(); update();
-}));
-
-[['first','first'],['last','last'],['bio','bio'],['badge','badge'],['degree','degree'],['cta','cta']].forEach(([id,k]) => bindField(id, () => S.profile, k));
-[['text','text'],['duration','duration'],['time','time'],['edited','edited']].forEach(([id,k]) => bindField(id, () => S.post, k));
-[['rsName','name'],['rsTime','time'],['rsBio','bio'],['rsText','text']].forEach(([id,k]) => bindField(id, () => S.rs, k));
-bindField('linesText', () => S.fold, 'linesText', 'num');
-bindField('linesMedia', () => S.fold, 'linesMedia', 'num');
-bindField('shortOn', () => S.fold, 'shortOn');
-bindField('shortChars', () => S.fold, 'shortChars', 'num');
-$('#mobileWidth').addEventListener('change', e => { S.view.mobileWidth = +e.target.value; update(); });
-
-const syncThumbs = [
-  bindImage('photo','photoThumb','photoClear', () => S.profile.photo, v => S.profile.photo = v, 256),
-  bindImage('image','imageThumb','imageClear', () => S.post.image, v => S.post.image = v, 1600),
-  bindImage('videoThumb','videoThumbImg','videoClear', () => S.post.videoThumb, v => S.post.videoThumb = v, 1600),
-  bindImage('rsPhoto','rsPhotoThumb','rsPhotoClear', () => S.rs.photo, v => S.rs.photo = v, 256),
-  bindImage('rsImage','rsImageThumb','rsImageClear', () => S.rs.image, v => S.rs.image = v, 1600)
-];
-
-bindSeg('modeSeg', v => { S.mode = v; if (v === 'basic' && (S.post.format === 'video' || S.post.format === 'reshare')) S.post.format = 'text'; });
-bindSeg('formatSeg', v => { S.post.format = v; });
-bindSeg('deviceSeg', v => { S.view.device = v; });
-bindSeg('expandSeg', v => { S.view.expanded = v === '1'; });
-
-function syncChrome(){
-  const adv = S.mode === 'adv';
-  document.body.classList.toggle('adv', adv);
-  setSeg('modeSeg', S.mode); setSeg('formatSeg', S.post.format); setSeg('deviceSeg', S.view.device); setSeg('expandSeg', S.view.expanded ? '1' : '0');
-  $$('#formatSeg .adv-btn').forEach(b => b.disabled = !adv);
-  $('#advHint').style.display = adv ? 'none' : 'block';
-  $('#photoBox').style.display = S.post.format === 'photo' ? 'block' : 'none';
-  $('#videoBox').style.display = S.post.format === 'video' ? 'block' : 'none';
-  $('#reshareSec').style.display = S.post.format === 'reshare' ? 'block' : 'none';
-  $('#mobileWidth').style.display = S.view.device === 'mobile' ? 'inline-block' : 'none';
-}
-function update(){ syncChrome(); render(); persist(); }
-
-/* ---------- saved profiles ---------- */
-function profileLabel(p){ return `${p.first} ${p.last}`.trim() || 'Unnamed'; }
-function refreshProfiles(selectedId){
-  const sel = $('#profileSel');
-  sel.innerHTML = `<option value="">— Unsaved —</option>` + profiles.map(p => `<option value="${esc(p.id)}">${esc(profileLabel(p))}</option>`).join('');
-  sel.value = selectedId || '';
-}
-function saveProfiles(){
-  if (!lsSet(LS_PROFILES, profiles)) toast('Could not save: browser storage is full');
-}
-function snapshotProfile(){ const P = S.profile; return {first:P.first,last:P.last,photo:P.photo,bio:P.bio,badge:P.badge,degree:P.degree,cta:P.cta}; }
-$('#profileSel').addEventListener('change', e => {
-  const p = profiles.find(x => x.id === e.target.value); if (!p) return;
-  Object.assign(S.profile, snapshotFrom(p)); S.profileId = p.id; fillFields(); update();
-});
-function snapshotFrom(p){ return {first:p.first||'',last:p.last||'',photo:p.photo||'',bio:p.bio||'',badge:p.badge||'none',degree:p.degree||'You',cta:p.cta||''}; }
-$('#pSaveNew').addEventListener('click', () => {
-  const p = Object.assign({id: 'p' + Date.now().toString(36)}, snapshotProfile());
-  profiles.push(p); saveProfiles(); S.profileId = p.id; refreshProfiles(p.id); persist(); toast(`Saved “${profileLabel(p)}”`);
-});
-$('#pUpdate').addEventListener('click', () => {
-  const id = $('#profileSel').value, i = profiles.findIndex(x => x.id === id);
-  if (i < 0) { toast('Pick a saved profile first, or use Save as new'); return; }
-  profiles[i] = Object.assign({id}, snapshotProfile()); saveProfiles(); refreshProfiles(id); toast('Profile updated');
-});
-$('#pDelete').addEventListener('click', () => {
-  const id = $('#profileSel').value, p = profiles.find(x => x.id === id);
-  if (!p) { toast('Pick a saved profile to delete'); return; }
-  if (!confirm(`Delete saved profile “${profileLabel(p)}”?`)) return;
-  profiles = profiles.filter(x => x.id !== id); saveProfiles(); S.profileId = ''; refreshProfiles(''); persist(); toast('Deleted');
-});
-$('#pExport').addEventListener('click', () => {
-  if (!profiles.length) { toast('No saved profiles to export'); return; }
-  const blob = new Blob([JSON.stringify({type:'linkedin-post-preview-profiles', version:1, profiles}, null, 2)], {type:'application/json'});
-  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'linkedin-preview-profiles.json'; a.click();
-  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-});
-$('#pImportBtn').addEventListener('click', () => $('#pImport').click());
-$('#pImport').addEventListener('change', async e => {
-  const f = e.target.files && e.target.files[0]; e.target.value = ''; if (!f) return;
-  try {
-    const data = JSON.parse(await f.text());
-    const list = Array.isArray(data) ? data : data.profiles;
-    if (!Array.isArray(list)) throw 0;
-    let added = 0;
-    list.forEach(raw => {
-      if (!raw || typeof raw !== 'object') return;
-      const p = Object.assign({id: String(raw.id || ('p' + Math.random().toString(36).slice(2)))}, snapshotFrom(raw));
-      if (p.photo && !/^data:image\//.test(p.photo)) p.photo = '';
-      const i = profiles.findIndex(x => x.id === p.id);
-      if (i >= 0) profiles[i] = p; else profiles.push(p);
-      added++;
-    });
-    saveProfiles(); refreshProfiles(S.profileId); toast(`Imported ${added} profile${added === 1 ? '' : 's'}`);
-  } catch(err){ toast('That file is not a profiles export'); }
-});
-
-/* ---------- PNG export ---------- */
-$('#download').addEventListener('click', async () => {
-  const node = $('#capture .li');
-  if (!window.htmlToImage){ toast('Image export unavailable. Take a screenshot instead.'); return; }
-  try {
-    const url = await window.htmlToImage.toPng(node, {pixelRatio: 3, backgroundColor: '#ffffff', cacheBust: true});
-    const a = document.createElement('a');
-    const who = `${S.profile.first}-${S.profile.last}`.replace(/[^\w-]+/g,'').toLowerCase() || 'post';
-    a.href = url; a.download = `linkedin-preview-${who}-${S.view.device}${S.view.expanded ? '-expanded' : ''}.png`; a.click();
-  } catch(e){ console.error(e); toast('Export failed. Try a screenshot instead.'); }
-});
-
-/* ---------- boot ---------- */
-refreshProfiles(S.profileId);
-fillFields();
-update();
-window.addEventListener('resize', () => render());
-})();
-</script>
+<script src="app.js"></script>
 </body>
 </html>
